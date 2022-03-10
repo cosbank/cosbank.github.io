@@ -344,6 +344,13 @@ p {
   background-color: #00c274;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 2px 5px 0px inset, rgba(0, 0, 0, 0.09) 0px 2px 2px 1px inset;
 }
+.formator {
+  width: 27%;
+  padding: 9px 10px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #0ac278;
+}
 .button.form {
   width: 27%;
   margin-right: 0px;
