@@ -1,12 +1,16 @@
 <html class="w-mod-js w-mod-no-touch w-mod-video w-mod-no-ios wf-roboto-n5-active wf-robotocondensed-n4-active wf-robotocondensed-n7-active wf-roboto-n4-active wf-robotoslab-n1-active wf-robotoslab-n3-active wf-robotoslab-n4-active wf-roboto-n3-active wf-active" style="">
 <head>
 	<meta charset="utf-8">
-	<title>Terminal Responsive Website Template | Webflow Templates</title>
+	<title>cosbank | Virtual Bank</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="generator" content="Webflow">
-	<link rel="stylesheet" type="text/css" href="https://daks2k3a4ib2z.cloudfront.net/52e965c308c9b5800e0005b7/css/terminaltemplate.webflow.8a786a8e8.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,regular,500%7CRoboto+Slab:100,300,regular%7CRoboto+Condensed:regular,700">
+	<style type="text/css">
+		* {
+			scroll-behavior: smooth;
+		}
+	</style>
 	<script>
 		WebFont.load({
   			google: {
@@ -22,11 +26,11 @@
 	<div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
 		<div class="w-container">
 			<a class="w-nav-brand brand-wrapper w--current" href="/">
-				<div class="logo-text">terminal</div>
+				<div class="logo-text">cosbank</div>
 			</a>
 			<nav class="w-nav-menu w-clearfix nav-menu" role="navigation">
 				<a class="w-nav-link nav-link w--current" href="/" style="max-width: 940px;">HOME</a>
-				<a class="w-nav-link nav-link" href="/pricing" style="max-width: 940px;">pricing</a>
+				<a class="w-nav-link nav-link" href="#pricing" style="max-width: 940px;">pricing</a>
 				<a class="w-nav-link nav-link" href="/services" style="max-width: 940px;">services</a>
 				<a class="w-nav-link nav-link" href="/about" style="max-width: 940px;">About</a>
 				<a class="w-nav-link nav-link" href="/contact" style="max-width: 940px;">Contact</a>
@@ -46,7 +50,7 @@
 			<a class="button" href="/sign-up">GET STARTED NOW</a>
 			<a class="outline-button" href="#learn-more">LEARN MORE</a>
 			<div class="image-crop hero">
-				<img src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52eacd46db3386b87700003b_black-ipad.png" width="480" alt="52eacd46db3386b87700003b_black-ipad.png">
+				<img src="imgs/black-ipad.png" width="480">
 			</div>
 		</div>
 	</div>
@@ -56,20 +60,28 @@
 				<div class="press-title">In the press</div>
 			</div>
 			<div class="press-image-wrapper">
-				<img class="press-logo" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52e9b11308c9b5800e000816_logo_Forbes.svg" alt="52e9b11308c9b5800e000816_logo_Forbes.svg">
+				<a class="w-inline-block" href="https://www.forbes.ru/">
+					<img class="press-logo" src="imgs/forbes.svg">
+				</a>
 			</div>
 			<div class="press-image-wrapper">
-				<img class="press-logo" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52e9b105d1e4ea7e0e000a6f_logo_Fastcompany.svg" alt="52e9b105d1e4ea7e0e000a6f_logo_Fastcompany.svg">
+				<a class="w-inline-block" href="https://www.fastcompany.com/">
+					<img class="press-logo" src="imgs/fastcompany.svg">
+				</a>
 			</div>
 			<div class="press-image-wrapper">
-				<img class="press-logo" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52e9b118d1e4ea7e0e000a71_logo_Wired.svg" alt="52e9b118d1e4ea7e0e000a71_logo_Wired.svg">
+				<a class="w-inline-block" href="https://www.wired.com/">
+					<img class="press-logo" src="imgs/wired.svg">
+				</a>
 			</div>
-			<div class="press-image-wrapper" href="https://www.zdnet.com/">
-				<img class="press-logo" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52e9b1b608c9b5800e00081a_logo_zdnet.svg" alt="52e9b1b608c9b5800e00081a_logo_zdnet.svg">
+			<div class="press-image-wrapper">
+				<a class="w-inline-block" href="https://www.zdnet.com/">
+					<img class="press-logo" src="imgs/zdnet.svg">
+				</a>
 			</div>
 			<div class="press-image-wrapper">
 				<a class="w-inline-block" href="https://techcrunch.com/">
-					<img class="press-logo" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52e9b122d1e4ea7e0e000a73_logo_techcrunch.svg" alt="52e9b122d1e4ea7e0e000a73_logo_techcrunch.svg">
+					<img class="press-logo" src="imgs/techcrunch.svg">
 				</a>
 			</div>
 		</div>
@@ -83,7 +95,7 @@
 					<a class="get-started-link" href="/sign-up">Get started now   ❯ </a>
 				</div>
 				<div class="w-col w-col-4 center">
-					<img class="all-devices-image" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52eadae26dd4d1b91b000016_All-devices.png" alt="52eadae26dd4d1b91b000016_All-devices.png">
+					<img class="all-devices-image" src="imgs/devices.png">
 				</div>
 			</div>
 		</div>
@@ -93,7 +105,7 @@
 			<div class="w-row">
 				<div class="w-col w-col-7">
 					<div class="image-crop">
-						<img class="ipad-image" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52eacd46db3386b87700003b_black-ipad.png" width="490" alt="52eacd46db3386b87700003b_black-ipad.png">
+						<img class="ipad-image" src="imgs/black-ipad.png" width="490">
 					</div>
 				</div>
 				<div class="w-col w-col-5">
@@ -102,21 +114,21 @@
 					<ul class="w-list-unstyled feature-list">
 						<li class="w-clearfix feature-item">
 							<div class="feature-icon-wrapper">
-								<img class="feature-icon" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52eac53f791573df500000f0_icon_55.png" width="30" alt="52eac53f791573df500000f0_icon_55.png">
+								<img class="feature-icon" src="imgs/black-ipad.png" width="30">
 							</div>
 							<div class="feature-text title">Record your work.</div>
 							<div class="feature-text">Vivamus sollicitudin, felis vitae facilisis.</div>
 						</li>
 						<li class="w-clearfix feature-item">
 							<div class="feature-icon-wrapper">
-								<img class="feature-icon" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52eac54757f4f45674000113_icon_51.png" width="30" alt="52eac54757f4f45674000113_icon_51.png">
+								<img class="feature-icon" src="imgs/icon_play.png" width="30">
 							</div>
 							<div class="feature-text title">Play it back.</div>
 							<div class="feature-text">Vivamus sollicitudin, felis vitae facilisis mollis, diam.</div>
 						</li>
 						<li class="w-clearfix feature-item">
 							<div class="feature-icon-wrapper">
-								<img class="feature-icon" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52eac55557f4f45674000114_icon_53.png" width="30" alt="52eac55557f4f45674000114_icon_53.png">
+								<img class="feature-icon" src="imgs/icon_pause.png" width="30">
 							</div>
 							<div class="feature-text title">Pause at any moment.</div>
 							<div class="feature-text">Vivamus sollicitudin, felis vitae facilisis mollis.</div>
@@ -135,21 +147,21 @@
 					<ul class="w-list-unstyled feature-list">
 						<li class="w-clearfix feature-item">
 							<div class="feature-icon-wrapper">
-								<img class="feature-icon" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52eac356b5745be050000128_icon_25.png" width="30" alt="52eac356b5745be050000128_icon_25.png">
+								<img class="feature-icon" src="imgs/icon_time.png" width="30">
 							</div>
 							<div class="feature-text title">Track your time on your phone.</div>
 							<div class="feature-text">Vivamus sollicitudin, felis vitae facilisis.</div>
 						</li>
 						<li class="w-clearfix feature-item">
 							<div class="feature-icon-wrapper">
-								<img class="feature-icon" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52eac2fc791573df500000de_icon_03.png" width="30" alt="52eac2fc791573df500000de_icon_03.png">
+								<img class="feature-icon" src="imgs/icon_feather.png" width="30">
 							</div>
 							<div class="feature-text title">Create and edit all your projects.</div>
 							<div class="feature-text">Vivamus sollicitudin, felis vitae facilisis mollis, diam.</div>
 						</li>
 						<li class="w-clearfix feature-item">
 							<div class="feature-icon-wrapper">
-								<img class="feature-icon" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52eac345791573df500000e2_icon_08.png" width="30" alt="52eac345791573df500000e2_icon_08.png">
+								<img class="feature-icon" src="imgs/icon_plane.png" width="30">
 							</div>
 							<div class="feature-text title">Send it and get paid.</div>
 							<div class="feature-text">Vivamus sollicitudin, felis vitae facilisis mollis.</div>
@@ -158,13 +170,13 @@
 				</div>
 				<div class="w-col w-col-7 image-column">
 					<div class="image-crop iphone">
-						<img class="iphone-image" src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52eabb5957f4f45674000088_iPhone-flat2x.png" width="281" alt="52eabb5957f4f45674000088_iPhone-flat2x.png">
+						<img class="iphone-image" src="imgs/iphone.png" width="281">
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="section black">
+	<div id="pricing" class="section black">
 		<div class="w-container">
 			<div class="title">
 				<h2>Our Pricing is simple</h2>
@@ -258,7 +270,7 @@
 							<a class="footer-link" href="#">Services</a>
 						</li>
 						<li>
-							<a class="footer-link" href="#">Plans &amp; Pricing</a>
+							<a class="footer-link" href="#pricing">Plans &amp; Pricing</a>
 						</li>
 						<li>
 							<a class="footer-link" href="#">Blog</a>
@@ -315,7 +327,7 @@
 							<img src="http://uploads.webflow.com/52e965c308c9b5800e0005b7/52e9df08b86326193300010c_facebook-icon.svg" alt="52e9df08b86326193300010c_facebook-icon.svg">
 						</a>
 					</div>
-					<div class="logo-text footer">terminal</div>
+					<div class="logo-text footer">cosbank</div>
 				</div>
 			</div>
 		</div>
