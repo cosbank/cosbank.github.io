@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,regular,500%7CRoboto+Slab:100,300,regular%7CRoboto+Condensed:regular,700">
+	<link rel="stylesheet" type="text/css" href="css/dropdown.css">
 	<style type="text/css">
 		* {
 			scroll-behavior: smooth;
@@ -26,15 +27,24 @@
 	<div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
 		<div class="w-container">
 			<a class="w-nav-brand brand-wrapper w--current" href="/">
-				<div class="logo-text">cosbank</div>
+				<div id="thisisbody" class="logo-text">cosbank</div>
 			</a>
 			<nav class="w-nav-menu w-clearfix nav-menu" role="navigation">
 				<a class="w-nav-link nav-link w--current" href="#home" style="max-width: 940px;">Главная</a>
 				<a class="w-nav-link nav-link" href="#pricing" style="max-width: 940px;">Цена</a>
 				<a class="w-nav-link nav-link" href="#learn-more" style="max-width: 940px;">О cosbank</a>
-				<a class="w-nav-link nav-link" href="./contact" style="max-width: 940px;">Контакты</a>
 				<a class="w-nav-link nav-link right" href="./sign-up" style="max-width: 940px;">РЕГИСТРАЦИЯ</a>
+				<div class="dropdown right w-nav-link nav-link right">
+  					<button class="dropbtn">
+  						<img src="./imgs/russian.svg" width="10" height="10">&nbsp;&nbsp;Русский
+  					</button>
+  					<div class="dropdown-content">
+    					<a href="https://cosbank.github.io/en-us/"><img src="./imgs/unitedstates.svg" width="10" height="10">&nbsp;&nbsp;English</a>
+    					<a href="https://cosbank.github.io/ua-uk/"><img src="./imgs/ukrainian.svg" width="10" height="10">&nbsp;&nbsp;Українська</a>
+  					</div>
+				</div>
 			</nav>
+
 			<div class="w-nav-button menu-button">
 				<div class="w-icon-nav-menu"></div>
 			</div>
@@ -56,7 +66,7 @@
 	<div class="section press">
 		<div class="w-container">
 			<div class="press-image-wrapper title">
-				<div class="press-title">В прессе</div>
+				<div class="press-title" id="learn-more">В прессе</div>
 			</div>
 			<div class="press-image-wrapper">
 				<a class="w-inline-block" href="https://www.forbes.ru/">
@@ -85,7 +95,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section darkgrey" id="learn-more">
+	<div class="section darkgrey">
 		<div class="w-container">
 			<div class="w-row">
 				<div class="w-col w-col-8">
@@ -294,7 +304,7 @@
 				<div class="w-col w-col-3 footer-column">
 					<div class="w-form">
 						<form class="w-clearfix" name="email-form" data-name="Email Form">
-							<input class="w-input field-left" type="text" placeholder="Реферальный код" data-name="Email" required="required">
+							<input class="w-input field-left" type="text" placeholder="Реферальный код" data-name="Email" id="referal" required="required">
 							<input class="w-button button form" type="submit" data-wait="Wait..." wait="Wait..." value="OK">
 							<div class="no-spam">Вы можете получить реферальный код от своих друзей.</div>
 						</form>
