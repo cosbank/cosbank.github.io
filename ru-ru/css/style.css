@@ -15,6 +15,12 @@
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
+small.sales {
+	color: crimson;
+	font-size: 21px;
+	position: absolute;
+	top: 21%;
+}
 html {
 	height:100%;
 }
