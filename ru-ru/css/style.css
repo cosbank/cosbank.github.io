@@ -1203,3 +1203,6 @@ p {
 .nav-link:hover {
 	color: white;
 }
+.border-top {
+	border-top: 1px solid #999999;
+}
