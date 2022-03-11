@@ -416,7 +416,7 @@ p {
   display: inline-block;
   margin-top: 18px;
   padding-bottom: 3px;
-  border-bottom: 3px solid #5f6266;
+  border-bottom: 3px solid #4c709e;
   -webkit-transition: border-color 200ms ease;
   transition: border-color 200ms ease;
   color: white;
@@ -425,7 +425,7 @@ p {
   letter-spacing: 1px;
 }
 .logo-text:hover {
-  border-bottom-color: #4c709e;
+  border-bottom-color: #5f6266;
 }
 .logo-text.footer {
   color: #5f6266;
