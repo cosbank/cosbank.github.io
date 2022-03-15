@@ -102,7 +102,7 @@
 					<div class="testimonials-column">
 						<div class="testimonials-title">УВІЙТИ ЗА ДОПОМОГИ УНІКАЛЬНОГО ПОСИЛАННЯ</div>
 						<p class="testimonial">
-							<form class="w-clearfix" name="email-form" data-name="Email Form">
+							<form onsubmit="return false;" class="w-clearfix" name="email-form" data-name="Email Form">
 								<input class="w-input field-left" type="text" placeholder="Унікальне посилання" data-name="Email" id="unique" required="required">
 								<button onclick="executing();" id="usub" class="w-button formator">OK</button>
 						</form>
@@ -119,7 +119,7 @@
 					<h4>КОМПАНІЯ</h4>
 					<ul class="w-list-unstyled">
 						<li>
-							<a class="footer-link" href="../#">Головна</a>
+							<a class="footer-link" href="../">Головна</a>
 						</li>
 						<li>
 							<a class="footer-link" href="../#learn-more">Про cosbank</a>
@@ -150,7 +150,7 @@
 				</div>
 				<div class="w-col w-col-3 footer-column">
 					<div class="w-form">
-						<form class="w-clearfix" name="email-form" data-name="Email Form">
+						<form  class="w-clearfix" name="email-form" data-name="Email Form">
 							<input class="w-input field-left" type="text" placeholder="Реферальный код" data-name="Email" id="referal" required="required">
 							<input class="w-button button form" type="submit" data-wait="Wait..." wait="Wait..." value="OK">
 							<div class="no-spam">Ви можете отримати реферальний код від своїх друзів.</div>
@@ -189,8 +189,6 @@
 			 let a = document.getElementById("unique").value;
 			 if (a === "iu15022022as") {
 			 	location.href = 'https://cosbank.github.io/dashboard/iu15022022as'
-			 } else if (a === null) {
-			 	return false;
 			 } else alert("Unique URL is invalid")
 		}
 	</script>

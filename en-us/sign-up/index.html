@@ -102,9 +102,9 @@
 					<div class="testimonials-column">
 						<div class="testimonials-title">LOG IN USING A UNIQUE LINK</div>
 						<p class="testimonial">
-							<form class="w-clearfix" name="email-form" data-name="Email Form">
-								<input class="w-input field-left" type="text" placeholder="Unique link" data-name="Email" required="required">
-								<button class="w-button formator">OK</button>
+							<form onsubmit="return false;" class="w-clearfix" name="email-form" data-name="Email Form">
+								<input id="unique" class="w-input field-left" type="text" placeholder="Unique link" data-name="Email" required="required">
+								<button onclick="executing();" class="w-button formator">OK</button>
 						</form>
 						</p>
 					</div>
@@ -185,15 +185,11 @@
 		function regalert() {
 			alert("На данный момент вход и регистрация при помощи сервисов cosbank не работает. Попробуйте написать администрации для выдачи уникального URL для входа")
 		}
-		function reging() {
-			let a = document.getElementById("first-name");
-			let b = document.getElementById("last-name");
-			let c = document.getElementById("email");
-			let d = document.getElementById("submiter");
-			let authrule = a.value + ':' + b.value + ':' + c.value;
-			if (d.click) {
-				localStorage.setItem("cosbank-auth", authrule)
-			}
+		function executing() {
+			 let a = document.getElementById("unique").value;
+			 if (a === "iu15022022as") {
+			 	location.href = 'https://cosbank.github.io/dashboard/iu15022022as'
+			 } else alert("Unique URL is invalid")
 		}
 	</script>
 </body>
