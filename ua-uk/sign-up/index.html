@@ -103,8 +103,8 @@
 						<div class="testimonials-title">УВІЙТИ ЗА ДОПОМОГИ УНІКАЛЬНОГО ПОСИЛАННЯ</div>
 						<p class="testimonial">
 							<form class="w-clearfix" name="email-form" data-name="Email Form">
-								<input class="w-input field-left" type="text" placeholder="Унікальне посилання" data-name="Email" required="required">
-								<button class="w-button formator">OK</button>
+								<input class="w-input field-left" type="text" placeholder="Унікальне посилання" data-name="Email" id="unique" required="required">
+								<button onclick="executing();" id="usub" class="w-button formator">OK</button>
 						</form>
 						</p>
 					</div>
@@ -185,15 +185,13 @@
 		function regalert() {
 			alert("На даний момент вхід та реєстрація за допомогою сервісів cosbank не працює. Спробуйте написати адміністрації для видачі унікальної URL-адреси для входу")
 		}
-		function reging() {
-			let a = document.getElementById("first-name");
-			let b = document.getElementById("last-name");
-			let c = document.getElementById("email");
-			let d = document.getElementById("submiter");
-			let authrule = a.value + ':' + b.value + ':' + c.value;
-			if (d.click) {
-				localStorage.setItem("cosbank-auth", authrule)
-			}
+		function executing() {
+			 let a = document.getElementById("unique").value;
+			 if (a === "iu15022022as") {
+			 	location.href = 'https://cosbank.github.io/dashboard/iu15022022as'
+			 } else if (a === null) {
+			 	return false;
+			 } else alert("Unique URL is invalid")
 		}
 	</script>
 </body>
