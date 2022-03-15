@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'aquirebold';
+    src: url('aquire-webfont.woff2') format('woff2'),
+         url('aquire-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .w-icon-slider-right:before {
 	content:"\e600";
 }
