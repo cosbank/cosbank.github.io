@@ -310,8 +310,8 @@
 				<div class="w-col w-col-3 footer-column">
 					<div class="w-form">
 						<form class="w-clearfix" name="email-form" data-name="Email Form">
-							<input class="w-input field-left" type="text" placeholder="Referral code" data-name="Email" id="referal" required="required">
-							<input class="w-button button form" type="submit" data-wait="Wait..." wait="Wait..." value="OK">
+							<input class="w-input field-left" type="text" placeholder="Referral code" data-name="Email" id="referral" required="required">
+							<input onclick="refsys();" class="w-button button form" type="submit" data-wait="Wait..." wait="Wait..." value="OK">
 							<div class="no-spam">You can get a referral code from your friends.</div>
 						</form>
 						<div class="w-form-done success-message">
@@ -327,6 +327,14 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		function refsys() {
+			 let a = document.getElementById("referral").value;
+			 if (a === "ie15022022ns") {
+			 	location.href = 'https://cosbank.github.io/dashboard/ie15022022ns'
+			 } else alert("Referral code is invalid")
+		}
+	</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	<!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 

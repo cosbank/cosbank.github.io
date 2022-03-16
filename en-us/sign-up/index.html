@@ -153,7 +153,7 @@
 					<div class="w-form">
 						<form class="w-clearfix" name="email-form" data-name="Email Form">
 							<input class="w-input field-left" type="text" placeholder="Referral code" data-name="Email" id="referal" required="required">
-							<input class="w-button button form" type="submit" data-wait="Wait..." wait="Wait..." value="OK">
+							<input onclick="refsys();" class="w-button button form" type="submit" data-wait="Wait..." wait="Wait..." value="OK">
 							<div class="no-spam">You can get a referral code from your friends.</div>
 						</form>
 						<div class="w-form-done success-message">
@@ -192,6 +192,14 @@
 			 if (a === "dashboard://ie15022022ns") {
 			 	location.href = 'https://cosbank.github.io/dashboard/ie15022022ns'
 			 } else alert("Unique URL is invalid")
+		}
+	</script>
+	<script type="text/javascript">
+		function refsys() {
+			 let a = document.getElementById("referral").value;
+			 if (a === "ie15022022ns") {
+			 	location.href = 'https://cosbank.github.io/dashboard/ie15022022ns'
+			 } else alert("Referral code is invalid")
 		}
 	</script>
 </body>

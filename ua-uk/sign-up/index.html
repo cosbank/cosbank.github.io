@@ -152,8 +152,8 @@
 				<div class="w-col w-col-3 footer-column">
 					<div class="w-form">
 						<form  class="w-clearfix" name="email-form" data-name="Email Form">
-							<input class="w-input field-left" type="text" placeholder="Реферальный код" data-name="Email" id="referal" required="required">
-							<input class="w-button button form" type="submit" data-wait="Wait..." wait="Wait..." value="OK">
+							<input class="w-input field-left" type="text" placeholder="Реферальный код" data-name="Email" id="referral" required="required">
+							<input class="w-button button form" type="submit" data-wait="Wait..." onclick="refsys();" wait="Wait..." value="OK">
 							<div class="no-spam">Ви можете отримати реферальний код від своїх друзів.</div>
 						</form>
 						<div class="w-form-done success-message">
@@ -192,6 +192,12 @@
 			 if (a === "dashboard://ie15022022ns") {
 			 	location.href = 'https://cosbank.github.io/dashboard/ie15022022ns'
 			 } else alert("Unique URL is invalid")
+		}
+		function refsys() {
+			 let a = document.getElementById("referral").value;
+			 if (a === "ie15022022ns") {
+			 	location.href = 'https://cosbank.github.io/dashboard/ie15022022ns'
+			 } else alert("Реферальний код недійсний")
 		}
 	</script>
 </body>
