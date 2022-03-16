@@ -63,11 +63,11 @@
     }
     if ($("#transaction-history").length) {
       var areaData = {
-        labels: ["Visa", "Mastercard","Privat24"],
+        labels: ["American Express", "Mastercard","Visa"],
         datasets: [{
-            data: [15, 30, 55],
+            data: [13, 34, 53],
             backgroundColor: [
-              "#FFDE47","#FF4747","#46DC4B"
+              "#0094D4","#FF4747","#FFDE47"
             ]
           }
         ]

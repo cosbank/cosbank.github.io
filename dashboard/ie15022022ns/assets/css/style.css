@@ -7429,6 +7429,9 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ * {
+    scroll-behavior: smooth;
+ }
 :root {
   --blue: #5E50F9;
   --indigo: #6610f2;
@@ -7571,12 +7574,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #007bff;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
     color: #0056b3;
-    text-decoration: underline; }
+ }
 
 a:not([href]):not([class]) {
   color: inherit;
@@ -15768,14 +15770,20 @@ code {
   -webkit-transition: all 0.25s ease;
   -ms-transition: all 0.25s ease;
   font-size: calc(0.875rem - 0.05rem);
-  font-weight: 300; }
-  .footer a {
-    color: #00d25b;
-    font-size: inherit; }
-  @media (max-width: 991px) {
+  font-weight: 300; 
+}
+.footer a {
+  font-size: inherit; 
+}
+.footer a:hover {
+    filter: brightness(75%);
+}
+@media (max-width: 991px) {
     .footer {
       margin-left: 0;
-      width: 100%; } }
+      width: 100%; 
+    } 
+}
 
 /* Utilities */
 .grid-margin {
@@ -21150,43 +21158,26 @@ div.tagsinput {
 .logo-text-l:hover {
   border-bottom-color: #5f6266;
 }
-.title {
-    font-family: 'Arial', sans-serif;
-    padding-left: 35px;
+@font-face { 
+    font-family:"Aquire Bold";
+    src:url("../fonts/aquirebold.otf");
+    font-weight:normal;
+    font-style:normal;
+}
+.cos-font {
+    color: lightgray !important;
     font-size: 24px;
+    font-family: "Aquire Bold";
+}
+.cos-logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: lightgray;
 }
 .card-cur {
-    min-width: 212% !important;
+    min-width: 210% !important;
 }
-.margin-left-brd {
-    margin-left: 245px;
-}
-.cur-lower {
-    margin-top: -60px;
-}
-.btn-buy {
-    background: #3BC82B;
-    border-radius: 5px;
-    color: white;
-    font-size: 19px;
-    border: none;
-    margin-top: 40px;
-    width: 55px;
-    margin-bottom: -15px;
-}
-.btn-sell {
-    margin-top: 40px;
-    margin-bottom: -15px;
-    background: #C83026;
-    border-radius: 5px;
-    color: white;
-    width: 55px;
-    font-size: 19px;
-    border: none;
-}
-.btn-buy:active {
-    filter: brightness(75%);
-}
-.btn-sell:active {
-    filter: brightness(75%);
+.margin-cards {
+    margin-left: 110%;
 }

@@ -1212,3 +1212,14 @@ p {
 .border-top {
 	border-top: 1px solid #999999;
 }
+@font-face { 
+    font-family:"Aquire Bold";
+    src:url("../fonts/aquirebold.otf");
+    font-weight:normal;
+    font-style:normal;
+}
+.cosinus {
+	color: lightgray;
+	font-family:"Aquire Bold";
+	text-decoration: none;
+}

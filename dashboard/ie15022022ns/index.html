@@ -27,6 +27,11 @@
           </a>
         </div>
         <ul class="nav">
+          <li>
+            <span class="text-muted">
+              <p id="uniquelink" style="margin-left: 10px;">Your unique link: dashboard://ie15022022ns</p>
+            </span>
+          </li>
           <li class="nav-item menu-items active">
             <a class="nav-link" href="?">
               <span class="menu-icon">
@@ -47,30 +52,37 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./pages/earning/cryptocurrency/index.html">Cryptocurrency chart</a></li>
-                <li class="nav-item"> <a class="nav-link" href="./pages/earning/currencies/index.html">Currencies Chart</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#cryptocurrencies">Cryptocurrency chart</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#currencies">Currencies Chart</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#atm" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" href="#transactions">
+              <span class="menu-icon">
+                <img width="16" height="16" src="assets/images/icons/outline_trending_up_white_18dp.png">
+              </span>
+              <span class="menu-title">Transactions & Projects</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="#orders">
+              <span class="menu-icon">
+                <img width="16" height="16" src="assets/images/icons/outline_dns_white_18dp.png">
+              </span>
+              <span class="menu-title">Order Status</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./pages/atm">
               <span class="menu-icon">
                 <img width="16" height="16" src="assets/images/icons/outline_atm_white_18dp.png">
               </span>
               <span class="menu-title">ATM</span>
-              <i class="menu-arrow">
-                <img width="16" height="16" src="assets/images/icons/outline_arrow_forward_ios_white_18dp.png">
-              </i>
             </a>
-            <div class="collapse" id="atm">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./pages/atm/deposit/index.html">Deposit</a></li>
-                <li class="nav-item"> <a class="nav-link" href="./pages/atm/withdraw/index.html">Withdraw</a></li>
-              </ul>
-            </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="./pages/gifts/index.html">
+            <a class="nav-link" href="./pages/gifts">
               <span class="menu-icon">
                 <img width="16" height="16" src="assets/images/icons/outline_card_giftcard_white_18dp.png">              
               </span>
@@ -78,7 +90,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/mining/index.html">
+            <a class="nav-link" href="./pages/mining">
               <span class="menu-icon">
                 <img width="16" height="16" src="assets/images/icons/outline_diamond_white_18dp.png">
               </span>
@@ -88,44 +100,34 @@
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <span class="menu-icon">
-                <i class="mdi mdi-security"></i>
+                <img width="16" height="16" src="assets/images/icons/outline_bookmark_border_white_18dp.png">
               </span>
-              <span class="menu-title">User Pages</span>
-              <i class="menu-arrow"></i>
+              <span class="menu-title">Other</span>
+              <i class="menu-arrow">
+                <img width="16" height="16" src="assets/images/icons/outline_arrow_forward_ios_white_18dp.png">
+              </i>
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
+                <li class="nav-item"> <a class="nav-link" href="https://github.com/cosbank/cosbank.github.io" target="_blank">Github Repository</a></li>
+                <li class="nav-item"> <a class="nav-link" href="https://github.com/Int0shiro">Author's Github</a></li>
+                <li class="nav-item"> <a class="nav-link" href="https://cosinus.github.io">Cosinus</a></li>
+                <li class="nav-item"> <a class="nav-link" href="https://cosinus.github.io/pix"> Pix </a></li>
               </ul>
             </div>
           </li>
           <br/>
-          <br/>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="https://cosinus.github.io/pix">
+            <a class="nav-link" href="https://cosbank.github.io/en-us/sign-up">
               <span class="menu-icon">
-                <img width="16" height="16" src="assets/images/icons/outline_pix_white_18dp.png">
+                <img width="16" height="16" src="assets/images/icons/outline_logout_white_18dp.png">
               </span>
-              <span class="menu-title">Pix</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="https://cosinus.github.io/polymer">
-              <span class="menu-icon">
-                <img width="16" height="16" src="assets/images/icons/outline_polymer_white_18dp.png">
-              </span>
-              <span class="menu-title">Polymer</span>
+              <span class="menu-title">Log Out</span>
             </a>
           </li>
         </ul>
       </nav>
-      <!-- partial -->
       <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_navbar.html -->
         <nav class="navbar p-0 fixed-top d-flex flex-row">
           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
             <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo"></a>
@@ -304,8 +306,7 @@
             </button>
           </div>
         </nav>
-        <!-- partial -->
-        <div class="main-panel">
+        <div id="cryptocurrencies" class="main-panel">
           <div class="content-wrapper">
             <div class="row">
               <div class="col-12 grid-margin stretch-card">
@@ -351,7 +352,7 @@
                 </div>
               </div>
               <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="margin-left-brd card card-cur">
+                <div class="card card-cur margin-cards">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-9">
@@ -393,7 +394,7 @@
                 </div>
               </div>
               <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="margin-left-brd card card-cur">
+                <div class="card-cur card margin-cards">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-9">
@@ -408,7 +409,7 @@
                         </div>
                       </div>
                     </div>
-                    <h6 class="text-muted font-weight-normal">Dogecoin</h6>
+                    <h6 id="transactions" class="text-muted font-weight-normal">Dogecoin</h6>
                   </div>
                 </div>
               </div>
@@ -433,7 +434,7 @@
                         <p class="text-muted mb-0">14 Mar 2022, 04:45AM</p>
                       </div>
                       <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
-                        <h6 class="font-weight-bold mb-0">$236</h6>
+                        <h6 class="font-weight-bold mb-0">$10,890</h6>
                       </div>
                     </div>
                     <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
@@ -442,16 +443,16 @@
                         <p class="text-muted mb-0">15 Mar 2022, 06:12AM</p>
                       </div>
                       <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
-                        <h6 class="font-weight-bold mb-0">$593</h6>
+                        <h6 class="font-weight-bold mb-0">$7,836</h6>
                       </div>
                     </div>
                     <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                       <div class="text-md-center text-xl-left">
-                        <h6 class="mb-1">Transfer to <a class="text-success" href="http://privat24.ua/">Privat24</a></h6>
+                        <h6 class="mb-1">Transfer to <a class="text-success" href="https://www.americanexpress.com/">American Express</a></h6>
                         <p class="text-muted mb-0">16 Mar 2022, 05:29AM</p>
                       </div>
                       <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
-                        <h6 class="font-weight-bold mb-0">$936</h6>
+                        <h6 class="font-weight-bold mb-0">$4,956</h6>
                       </div>
                     </div>
                   </div>
@@ -469,7 +470,7 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div id="currencies" class="row">
               <div class="col-sm-4 grid-margin">
                 <div class="card">
                   <div class="card-body">
@@ -517,7 +518,7 @@
                         </div>
                         <h6 class="text-muted font-weight-normal">$ 0.013 Highest in a month</h6>
                       </div>
-                      <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                      <div id="orders" class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                         <img src="assets/images/icons/outline_currency_ruble_white_18dp.png">
                       </div>
                     </div>
@@ -529,7 +530,7 @@
               <div class="col-12 grid-margin">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Order Status</h4>
+                    <h4 class="card-title"><img width="16" height="16" src="assets/images/icons/outline_dns_white_18dp.png">&nbsp;&nbsp;Order Status</h4>
                     <div class="table-responsive">
                       <table style="overflow-x: hidden" class="table">
                         <thead>
@@ -560,7 +561,7 @@
                             </td>
                             <td> 00001 </td>
                             <td> $7,836 </td>
-                            <td> Visa </td>
+                            <td> Mastercard </td>
                             <td> Cash on delivered </td>
                             <td> 15 Mar 2022 </td>
                             <td>
@@ -572,12 +573,12 @@
                               <div class="form-check form-check-muted m-0">
                                 <label class="form-check-label">
                                   <input type="checkbox" class="form-check-input">
-                                <i class="input-helper"></i></label>
+                                </label>
                               </div>
                             </td>
                             <td> 00002 </td>
                             <td> $1,634 </td>
-                            <td> Visa </td>
+                            <td> American Express </td>
                             <td> Credit card </td>
                             <td> 15 Mar 2022 </td>
                             <td>
@@ -611,7 +612,7 @@
                             </td>
                             <td> 00004 </td>
                             <td> $4,956 </td>
-                            <td> Visa </td>
+                            <td> American Express </td>
                             <td> Credit card </td>
                             <td> 15 Mar 2022 </td>
                             <td>
@@ -626,14 +627,15 @@
               </div>
             </div>
           </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © <a href="https://cosinus.github.io/" target="_blank">COSINUS</a> 2022<br>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © <a style="color: lime;" href="https://cosinus.github.io/" target="_blank">COSINUS</a> 2022<br>
 
-                Distributed By <a href="https://github.com/Int0shiro" target="_blank">1ntosh1ro</a>
+                Distributed By <a style="color: lime;" href="https://github.com/Int0shiro" target="_blank">1ntosh1ro</a>
 
+              </span>
+              <span class="cos-logo cos-font">
+                <a style="color: lightgray !important;" href="https://cosinus.github.io/">COSINUS</a>
               </span>
             </div>
           </footer>

@@ -76,6 +76,7 @@
         body.toggleClass('sidebar-hidden');
       } else {
         body.toggleClass('sidebar-icon-only');
+        $("#uniquelink").css("display", "none")
       }
     });
 
