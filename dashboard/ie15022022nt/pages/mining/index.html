@@ -1,0 +1,569 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>cosbank | Dashboard</title>
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="assets/css/jvectormap/jquery-jvectormap.css">
+    <link rel="stylesheet" href="assets/css/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel-2/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel-2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/charts.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+  <body>
+    <!-- иди нахуй отсюда чмо -->
+    <div class="container-scroller">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="https://cosbank.github.io/ua-uk/">
+            <div class="logo-text-l">cosbank</div>
+          </a>
+          <a class="sidebar-brand brand-logo-mini" href="index.html">
+            <div class="logo-text-l">cos</div>
+          </a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../../">
+              <span class="menu-icon">
+                <img width="16" height="16" src="assets/images/icons/outline_dashboard_white_18dp.png">
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../gifts">
+              <span class="menu-icon">
+                <img width="16" height="16" src="assets/images/icons/outline_card_giftcard_white_18dp.png">              
+              </span>
+              <span class="menu-title">Gift Storage</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items active">
+            <a class="nav-link" href="#">
+              <span class="menu-icon">
+                <img width="16" height="16" src="assets/images/icons/outline_diamond_white_18dp.png">
+              </span>
+              <span class="menu-title">Mining</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <span class="menu-icon">
+                <img width="16" height="16" src="assets/images/icons/outline_bookmark_border_white_18dp.png">
+              </span>
+              <span class="menu-title">Other</span>
+              <i class="menu-arrow">
+                <img width="16" height="16" src="assets/images/icons/outline_arrow_forward_ios_white_18dp.png">
+              </i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="https://github.com/cosbank/cosbank.github.io" target="_blank">Github Repository</a></li>
+                <li class="nav-item"> <a class="nav-link" href="https://github.com/Int0shiro">Author's Github</a></li>
+                <li class="nav-item"> <a class="nav-link" href="https://cosinus.github.io">Cosinus</a></li>
+                <li class="nav-item"> <a class="nav-link" href="https://cosinus.github.io/pix"> Pix </a></li>
+              </ul>
+            </div>
+          </li>
+          <br/>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://cosbank.github.io/en-us/sign-up">
+              <span class="menu-icon">
+                <img width="16" height="16" src="assets/images/icons/outline_logout_white_18dp.png">
+              </span>
+              <span class="menu-title">Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container-fluid page-body-wrapper">
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo"></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <img width="20" height="20" src="assets/images/icons/outline_format_list_bulleted_white_24dp.png">
+            </button>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+                  <h6 class="p-3 mb-0">Projects</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-file-outline text-primary"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Software Development</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-web text-info"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">UI Development</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-layers text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Software Testing</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">See all projects</p>
+                </div>
+              </li>
+              <li class="nav-item nav-settings d-none d-lg-block">
+                <a class="nav-link" href="https://cosbank.github.io/en-us/">
+                  <img width="25" height="25" src="assets/images/icons/outline_home_white_18dp.png">
+                </a>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <img width="25" height="25" src="assets/images/icons/outline_inbox_white_18dp.png">
+                  <span class="count bg-success"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                  <h6 class="p-3 mb-0">Messages</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
+                      <p class="text-muted mb-0"> 1 Minutes ago </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
+                      <p class="text-muted mb-0"> 15 Minutes ago </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
+                      <p class="text-muted mb-0"> 18 Minutes ago </p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <img width="25" height="25" src="assets/images/icons/outline_notifications_white_18dp.png">
+                  <span class="count bg-danger"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <h6 class="p-3 mb-0">Notifications</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <img style="width: 25px !important; height: 25px !important;" src="assets/images/icons/outline_emoji_events_white_18dp.png">
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Event today</p>
+                      <p class="text-muted ellipsis mb-0" title="Just a reminder that you have an event today"> Just a reminder that you have an event today </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <img style="width: 25px !important; height: 25px !important;" src="assets/images/icons/outline_settings_white_18dp.png">
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                      <p class="text-muted ellipsis mb-0"> Update dashboard </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <img style="width: 25px !important; height: 25px !important;" src="assets/images/icons/outline_admin_panel_settings_white_18dp.png">
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Launch Admin</p>
+                      <p class="text-muted ellipsis mb-0"> New admin wow! </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center"></p>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <div id="cryptocurrencies" class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="grid-margin stretch-card col-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0">Mining Farm №1</h3>
+                          <p class="text-warning ml-2 mb-0 font-weight-medium">GOLD</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 style="cursor: pointer; user-select: none;" onclick="enable1();" class="text-danger font-weight-normal" id="disabled1">Disabled</h6>
+                  </div>
+                </div>
+                <div class="card" style="margin-left: 25px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0">Mining Farm №2</h3>
+                          <p class="text-warning ml-2 mb-0 font-weight-medium">GOLD</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 style="cursor: pointer; user-select: none;" onclick="enable2();" class="text-danger font-weight-normal" id="disabled2">Disabled</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="grid-margin stretch-card col-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0">Mining Farm №3</h3>
+                          <p class="text-secondary ml-2 mb-0 font-weight-medium">SILVER</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 style="cursor: pointer; user-select: none;" onclick="enable3();" class="text-danger font-weight-normal" id="disabled3">Disabled</h6>
+                  </div>
+                </div>
+                <div class="card" style="margin-left: 25px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0">Mining Farm №4</h3>
+                          <p class="text-secondary ml-2 mb-0 font-weight-medium">SILVER</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 style="cursor: pointer; user-select: none;" onclick="enable4();" class="text-danger font-weight-normal" id="disabled4">Disabled</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="grid-margin stretch-card col-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0">Mining Farm №5</h3>
+                          <p class="text-primary ml-2 mb-0 font-weight-medium">PLATINUM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 style="cursor: pointer; user-select: none;" onclick="enable5();" class="text-danger font-weight-normal" id="disabled5">Disabled</h6>
+                  </div>
+                </div>
+                <div class="card" style="margin-left: 25px;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0">Mining Farm №6</h3>
+                          <p class="text-primary ml-2 mb-0 font-weight-medium">PLATINUM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 style="cursor: pointer; user-select: none;" onclick="enable6();" class="text-danger font-weight-normal" id="disabled6">Disabled</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span>
+                Distributed By <a style="color: lime;" href="https://github.com/Int0shiro" target="_blank">Int0shiro</a>
+
+              </span>
+              <span class="cos-logo cos-font">
+                <a style="color: lightgray !important;" target="_blank" href="https://cosinus.github.io/">COSINUS</a>
+              </span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/vendor.bundle.base.js"></script>
+    <script src="assets/js/Chart.min.js"></script>
+    <script src="assets/js/progressbar.min.js"></script>
+    <script src="assets/js/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="assets/js/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/js/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+
+    <script type="text/javascript">
+      function enable1() {
+        var btn = $('#disabled1')
+        let dombtn = document.getElementById('disabled1')
+        dombtn.setAttribute('onclick', 'confirm1();');
+        btn.removeClass('text-danger')
+        btn.addClass('text-warning')
+        btn.text('Confirm')
+        btn.addId('confirm1')
+        btn.removeId('disabled1')
+      }
+      function confirm1() {
+        var btn = $('#disabled1')
+        let dombtn = document.getElementById('disabled1')
+        dombtn.setAttribute('onclick', 'disable1();');
+        btn.removeClass('text-warning')
+        btn.addClass('text-success')
+        btn.text('Enabled')
+        btn.addId('enabled1')
+        btn.removeId('confirm1')
+      }
+      function disable1() {
+        var btn = $('#disabled1')
+        let dombtn = document.getElementById('disabled1')
+        dombtn.setAttribute('onclick', 'enable1();');
+        btn.removeClass('text-success')
+        btn.addClass('text-danger')
+        btn.text('Disabled')
+        btn.addId('disabled1')
+        btn.removeId('enabled1')
+      }
+
+      function enable2() {
+        var btn = $('#disabled2')
+        let dombtn = document.getElementById('disabled2')
+        dombtn.setAttribute('onclick', 'confirm2();');
+        btn.removeClass('text-danger')
+        btn.addClass('text-warning')
+        btn.text('Confirm')
+        btn.addId('confirm2')
+        btn.removeId('disabled2')
+      }
+      function confirm2() {
+        var btn = $('#disabled2')
+        let dombtn = document.getElementById('disabled2')
+        dombtn.setAttribute('onclick', 'disable2();');
+        btn.removeClass('text-warning')
+        btn.addClass('text-success')
+        btn.text('Enabled')
+        btn.addId('enabled2')
+        btn.removeId('confirm2')
+      }
+      function disable2() {
+        var btn = $('#disabled2')
+        let dombtn = document.getElementById('disabled2')
+        dombtn.setAttribute('onclick', 'enable2();');
+        btn.removeClass('text-success')
+        btn.addClass('text-danger')
+        btn.text('Disabled')
+        btn.addId('disabled2')
+        btn.removeId('enabled2')
+      }
+
+      function enable3() {
+        var btn = $('#disabled3')
+        let dombtn = document.getElementById('disabled3')
+        dombtn.setAttribute('onclick', 'confirm3();');
+        btn.removeClass('text-danger')
+        btn.addClass('text-warning')
+        btn.text('Confirm ')
+        btn.addId('confirm3')
+        btn.removeId('disabled3')
+      }
+      function confirm3() {
+        var btn = $('#disabled3')
+        let dombtn = document.getElementById('disabled3')
+        dombtn.setAttribute('onclick', 'disable3();');
+        btn.removeClass('text-warning')
+        btn.addClass('text-success')
+        btn.text('Enabled')
+        btn.addId('enabled3')
+        btn.removeId('confirm3')
+      }
+      function disable3() {
+        var btn = $('#disabled3')
+        let dombtn = document.getElementById('disabled3')
+        dombtn.setAttribute('onclick', 'enable3();');
+        btn.removeClass('text-success')
+        btn.addClass('text-danger')
+        btn.text('Disabled')
+        btn.addId('disabled3')
+        btn.removeId('enabled3')
+      }
+
+      function enable4() {
+        var btn = $('#disabled4')
+        let dombtn = document.getElementById('disabled4')
+        dombtn.setAttribute('onclick', 'confirm4();');
+        btn.removeClass('text-danger')
+        btn.addClass('text-warning')
+        btn.text('Confirm')
+        btn.addId('confirm4')
+        btn.removeId('disabled4')
+      }
+      function confirm4() {
+        var btn = $('#disabled4')
+        let dombtn = document.getElementById('disabled4')
+        dombtn.setAttribute('onclick', 'disable4();');
+        btn.removeClass('text-warning')
+        btn.addClass('text-success')
+        btn.text('Enabled')
+        btn.addId('enabled4')
+        btn.removeId('confirm4')
+      }
+      function disable4() {
+        var btn = $('#disabled4')
+        let dombtn = document.getElementById('disabled4')
+        dombtn.setAttribute('onclick', 'enable4();');
+        btn.removeClass('text-success')
+        btn.addClass('text-danger')
+        btn.text('Disabled')
+        btn.addId('disabled4')
+        btn.removeId('enabled4')
+      }
+
+      function enable5() {
+        var btn = $('#disabled5')
+        let dombtn = document.getElementById('disabled5')
+        dombtn.setAttribute('onclick', 'confirm5();');
+        btn.removeClass('text-danger')
+        btn.addClass('text-warning')
+        btn.text('Confirm')
+        btn.addId('confirm5')
+        btn.removeId('disabled5')
+      }
+      function confirm5() {
+        var btn = $('#disabled5')
+        let dombtn = document.getElementById('disabled5')
+        dombtn.setAttribute('onclick', 'disable5();');
+        btn.removeClass('text-warning')
+        btn.addClass('text-success')
+        btn.text('Enabled')
+        btn.addId('enabled5')
+        btn.removeId('confirm5')
+      }
+      function disable5() {
+        var btn = $('#disabled5')
+        let dombtn = document.getElementById('disabled5')
+        dombtn.setAttribute('onclick', 'enable5();');
+        btn.removeClass('text-success')
+        btn.addClass('text-danger')
+        btn.text('Disabled')
+        btn.addId('disabled5')
+        btn.removeId('enabled5')
+      }
+
+      function enable6() {
+        var btn = $('#disabled6')
+        let dombtn = document.getElementById('disabled6')
+        dombtn.setAttribute('onclick', 'confirm6();');
+        btn.removeClass('text-danger')
+        btn.addClass('text-warning')
+        btn.text('Confirm')
+        btn.addId('confirm6')
+        btn.removeId('disabled6')
+      }
+      function confirm6() {
+        var btn = $('#disabled6')
+        let dombtn = document.getElementById('disabled6')
+        dombtn.setAttribute('onclick', 'disable6();');
+        btn.removeClass('text-warning')
+        btn.addClass('text-success')
+        btn.text('Enabled')
+        btn.addId('enabled6')
+        btn.removeId('confirm6')
+      }
+      function disable6() {
+        var btn = $('#disabled6')
+        let dombtn = document.getElementById('disabled6')
+        dombtn.setAttribute('onclick', 'enable6();');
+        btn.removeClass('text-success')
+        btn.addClass('text-danger')
+        btn.text('Disabled')
+        btn.addId('disabled6')
+        btn.removeId('enabled6')
+      }
+    </script>
+  
+<div class="jvectormap-tip"></div><iframe style="position: absolute; width: 1px; height: 1px; left: -9999px;" src="https://www.ciuvo.com/ciuvo/globalstorage?version=2.1.3"></iframe></body></html>
