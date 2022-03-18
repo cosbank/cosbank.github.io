@@ -268,7 +268,7 @@
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">Mining Farm №1</h3>
-                          <p class="text-warning ml-2 mb-0 font-weight-medium">GOLD</p>
+                          <p style="cursor: pointer; user-select: none;" onclick="gold1();" id="gold1" class="text-warning ml-2 mb-0 font-weight-medium">GOLD</p>
                         </div>
                       </div>
                     </div>
@@ -281,7 +281,7 @@
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">Mining Farm №2</h3>
-                          <p class="text-warning ml-2 mb-0 font-weight-medium">GOLD</p>
+                          <p style="cursor: pointer; user-select: none;" onclick="gold2();" id="gold2" class="text-warning ml-2 mb-0 font-weight-medium">GOLD</p>
                         </div>
                       </div>
                     </div>
@@ -298,7 +298,7 @@
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">Mining Farm №3</h3>
-                          <p class="text-secondary ml-2 mb-0 font-weight-medium">SILVER</p>
+                          <p style="cursor: pointer; user-select: none;" onclick="silver3();" id="silver3" class="text-secondary ml-2 mb-0 font-weight-medium">SILVER</p>
                         </div>
                       </div>
                     </div>
@@ -311,7 +311,7 @@
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">Mining Farm №4</h3>
-                          <p class="text-secondary ml-2 mb-0 font-weight-medium">SILVER</p>
+                          <p style="cursor: pointer; user-select: none;" onclick="silver4();" id="silver4" class="text-secondary ml-2 mb-0 font-weight-medium">SILVER</p>
                         </div>
                       </div>
                     </div>
@@ -328,7 +328,7 @@
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">Mining Farm №5</h3>
-                          <p class="text-primary ml-2 mb-0 font-weight-medium">PLATINUM</p>
+                          <p style="cursor: pointer; user-select: none;" onclick="platinum5();" id="platinum5" class="text-primary ml-2 mb-0 font-weight-medium">PLATINUM</p>
                         </div>
                       </div>
                     </div>
@@ -341,7 +341,7 @@
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">Mining Farm №6</h3>
-                          <p class="text-primary ml-2 mb-0 font-weight-medium">PLATINUM</p>
+                          <p style="cursor: pointer; user-select: none;" onclick="platinum6();" id="platinum6" class="text-primary ml-2 mb-0 font-weight-medium">PLATINUM</p>
                         </div>
                       </div>
                     </div>
@@ -377,193 +377,7 @@
     <script src="assets/js/settings.js"></script>
     <script src="assets/js/todolist.js"></script>
     <script src="assets/js/dashboard.js"></script>
-
-    <script type="text/javascript">
-      function enable1() {
-        var btn = $('#disabled1')
-        let dombtn = document.getElementById('disabled1')
-        dombtn.setAttribute('onclick', 'confirm1();');
-        btn.removeClass('text-danger')
-        btn.addClass('text-warning')
-        btn.text('Confirm')
-        btn.addId('confirm1')
-        btn.removeId('disabled1')
-      }
-      function confirm1() {
-        var btn = $('#disabled1')
-        let dombtn = document.getElementById('disabled1')
-        dombtn.setAttribute('onclick', 'disable1();');
-        btn.removeClass('text-warning')
-        btn.addClass('text-success')
-        btn.text('Enabled')
-        btn.addId('enabled1')
-        btn.removeId('confirm1')
-      }
-      function disable1() {
-        var btn = $('#disabled1')
-        let dombtn = document.getElementById('disabled1')
-        dombtn.setAttribute('onclick', 'enable1();');
-        btn.removeClass('text-success')
-        btn.addClass('text-danger')
-        btn.text('Disabled')
-        btn.addId('disabled1')
-        btn.removeId('enabled1')
-      }
-
-      function enable2() {
-        var btn = $('#disabled2')
-        let dombtn = document.getElementById('disabled2')
-        dombtn.setAttribute('onclick', 'confirm2();');
-        btn.removeClass('text-danger')
-        btn.addClass('text-warning')
-        btn.text('Confirm')
-        btn.addId('confirm2')
-        btn.removeId('disabled2')
-      }
-      function confirm2() {
-        var btn = $('#disabled2')
-        let dombtn = document.getElementById('disabled2')
-        dombtn.setAttribute('onclick', 'disable2();');
-        btn.removeClass('text-warning')
-        btn.addClass('text-success')
-        btn.text('Enabled')
-        btn.addId('enabled2')
-        btn.removeId('confirm2')
-      }
-      function disable2() {
-        var btn = $('#disabled2')
-        let dombtn = document.getElementById('disabled2')
-        dombtn.setAttribute('onclick', 'enable2();');
-        btn.removeClass('text-success')
-        btn.addClass('text-danger')
-        btn.text('Disabled')
-        btn.addId('disabled2')
-        btn.removeId('enabled2')
-      }
-
-      function enable3() {
-        var btn = $('#disabled3')
-        let dombtn = document.getElementById('disabled3')
-        dombtn.setAttribute('onclick', 'confirm3();');
-        btn.removeClass('text-danger')
-        btn.addClass('text-warning')
-        btn.text('Confirm ')
-        btn.addId('confirm3')
-        btn.removeId('disabled3')
-      }
-      function confirm3() {
-        var btn = $('#disabled3')
-        let dombtn = document.getElementById('disabled3')
-        dombtn.setAttribute('onclick', 'disable3();');
-        btn.removeClass('text-warning')
-        btn.addClass('text-success')
-        btn.text('Enabled')
-        btn.addId('enabled3')
-        btn.removeId('confirm3')
-      }
-      function disable3() {
-        var btn = $('#disabled3')
-        let dombtn = document.getElementById('disabled3')
-        dombtn.setAttribute('onclick', 'enable3();');
-        btn.removeClass('text-success')
-        btn.addClass('text-danger')
-        btn.text('Disabled')
-        btn.addId('disabled3')
-        btn.removeId('enabled3')
-      }
-
-      function enable4() {
-        var btn = $('#disabled4')
-        let dombtn = document.getElementById('disabled4')
-        dombtn.setAttribute('onclick', 'confirm4();');
-        btn.removeClass('text-danger')
-        btn.addClass('text-warning')
-        btn.text('Confirm')
-        btn.addId('confirm4')
-        btn.removeId('disabled4')
-      }
-      function confirm4() {
-        var btn = $('#disabled4')
-        let dombtn = document.getElementById('disabled4')
-        dombtn.setAttribute('onclick', 'disable4();');
-        btn.removeClass('text-warning')
-        btn.addClass('text-success')
-        btn.text('Enabled')
-        btn.addId('enabled4')
-        btn.removeId('confirm4')
-      }
-      function disable4() {
-        var btn = $('#disabled4')
-        let dombtn = document.getElementById('disabled4')
-        dombtn.setAttribute('onclick', 'enable4();');
-        btn.removeClass('text-success')
-        btn.addClass('text-danger')
-        btn.text('Disabled')
-        btn.addId('disabled4')
-        btn.removeId('enabled4')
-      }
-
-      function enable5() {
-        var btn = $('#disabled5')
-        let dombtn = document.getElementById('disabled5')
-        dombtn.setAttribute('onclick', 'confirm5();');
-        btn.removeClass('text-danger')
-        btn.addClass('text-warning')
-        btn.text('Confirm')
-        btn.addId('confirm5')
-        btn.removeId('disabled5')
-      }
-      function confirm5() {
-        var btn = $('#disabled5')
-        let dombtn = document.getElementById('disabled5')
-        dombtn.setAttribute('onclick', 'disable5();');
-        btn.removeClass('text-warning')
-        btn.addClass('text-success')
-        btn.text('Enabled')
-        btn.addId('enabled5')
-        btn.removeId('confirm5')
-      }
-      function disable5() {
-        var btn = $('#disabled5')
-        let dombtn = document.getElementById('disabled5')
-        dombtn.setAttribute('onclick', 'enable5();');
-        btn.removeClass('text-success')
-        btn.addClass('text-danger')
-        btn.text('Disabled')
-        btn.addId('disabled5')
-        btn.removeId('enabled5')
-      }
-
-      function enable6() {
-        var btn = $('#disabled6')
-        let dombtn = document.getElementById('disabled6')
-        dombtn.setAttribute('onclick', 'confirm6();');
-        btn.removeClass('text-danger')
-        btn.addClass('text-warning')
-        btn.text('Confirm')
-        btn.addId('confirm6')
-        btn.removeId('disabled6')
-      }
-      function confirm6() {
-        var btn = $('#disabled6')
-        let dombtn = document.getElementById('disabled6')
-        dombtn.setAttribute('onclick', 'disable6();');
-        btn.removeClass('text-warning')
-        btn.addClass('text-success')
-        btn.text('Enabled')
-        btn.addId('enabled6')
-        btn.removeId('confirm6')
-      }
-      function disable6() {
-        var btn = $('#disabled6')
-        let dombtn = document.getElementById('disabled6')
-        dombtn.setAttribute('onclick', 'enable6();');
-        btn.removeClass('text-success')
-        btn.addClass('text-danger')
-        btn.text('Disabled')
-        btn.addId('disabled6')
-        btn.removeId('enabled6')
-      }
-    </script>
+    <script src="assets/js/enable.js"></script>
+    <script src="assets/js/change.js"></script>
   
 <div class="jvectormap-tip"></div><iframe style="position: absolute; width: 1px; height: 1px; left: -9999px;" src="https://www.ciuvo.com/ciuvo/globalstorage?version=2.1.3"></iframe></body></html>
