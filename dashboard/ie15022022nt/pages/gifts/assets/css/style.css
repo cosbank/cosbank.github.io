@@ -21181,3 +21181,20 @@ div.tagsinput {
 .margin-cards {
     margin-left: 140%;
 }
+.title-card {
+    position: absolute;
+    margin: 0;
+    bottom: 35px;
+    left: 90px;
+}
+.btn-card {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    border: none;
+    border-radius: 3px;
+    background: #5865F2;
+    color: white;
+    width: 90px;
+    height: 35px;
+}
